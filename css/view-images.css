@@ -1,0 +1,78 @@
+body{
+	background-color: #efefef;
+}
+/*Classes view-image e derivadas*/
+.thumbnail{
+	background-color: #fcfcfc;
+}
+.icon-close{
+	-webkit-filter: grayscale(1);
+	float: right;
+	width: 2.5%;
+	margin-top: 1%;
+}
+.icon-close:hover{
+	-webkit-filter: grayscale(0);
+}
+.icon-next{
+	-webkit-filter: grayscale(1);
+	float: right;
+	margin-top: -70%;
+	width: 2.5%;
+}
+.icon-next:hover{
+	-webkit-filter: grayscale(0);
+}
+.icon-prev{
+	-webkit-filter: grayscale(1);
+	float: left;
+	margin-top: -70%;
+	width: 2.5%;
+}
+.icon-prev:hover{
+	-webkit-filter: grayscale(0);
+}
+.active-image{
+	margin-bottom: 5%;
+	margin-top: 5%;
+}
+
+/*Classes relacionadas aos comentários (posts)*/
+textarea{
+  resize: none;
+}
+.button-group {
+  margin-bottom: 20px;
+}
+.counter {
+  display: inline;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+.posts {
+  clear: both;
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+}
+.posts li {
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  border-radius: 5px;
+}
+.posts img{
+  padding-left: 20px;
+  padding-right: 5px;
+}
+.posts .thumbnail{
+	background-color: transparent;
+	border-color: transparent;
+	max-height: 70px;
+}

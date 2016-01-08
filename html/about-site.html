@@ -1,0 +1,183 @@
+﻿<html>
+    <head>
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
+		<meta name="author" content="Flávia Bertoni"/>
+		<meta name="keywords" content="sobre, site, portfolio, web design"/>
+		<meta name="rating" content="general"/> <!-- Para qualquer idade -->
+		<meta http-equiv="content-language" content="pt-br"/>
+		
+		<!-- Bootstrap (CSS)-->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<!--<link rel="stylesheet" href="css/bootstrap-3.3.4-dist/css/bootstrap.min.css">-->
+		<!-- Fonte (letra)-->
+		<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+		<!-- Jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<!--<script src="js/jquery-1.11.2.min.js"></script>-->
+		<!-- Bootstrap (JS)-->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<!--<script src="css/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>-->
+		<!-- Originais -->
+		<link rel="stylesheet" href="../css/main.css">
+		<script src="../js/user.js"></script>
+		
+        <title>WebPortf: Sobre o Site</title>
+    </head>
+    
+    <body>
+
+		<!-- menu -->
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			  </button>
+			  <a class="navbar-brand" href="#">WebPortf</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav">
+				<li><a href="../index.html">Home</a></li>
+				<li class="dropdown	active">
+				  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sobre<span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+					<li class="active"><a href="about-site.html">Site</a></li>
+					<li><a href="about-me.html">Desenvolvedor</a></li>
+				  </ul>
+				</li>
+			  </ul>
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="tuto.html">Tutoriais</a></li>
+				<li><a href="portf.html">Portfólio</a></li>
+				<li id="sing-in"><a href="subscribe.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+				<li id="log-in"><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>	
+		
+		 <div class="jumbotron">
+            <div class="container">
+				<h1>Sobre o Site</h1>
+				<p>Mas afinal o que é o WebPortf?</p>
+				<p>
+					<form class="form-horizontal	search" method=GET action="http://www.google.com/search">
+					  <div class="form-group">
+						<input class="input-search" type="text" name=q  value="" class="form-control" placeholder=" Buscar no Google"/> 
+						<button type="submit" name=btnG class="btn btn-default" value=""> <span class="glyphicon glyphicon-search"></span> </button>
+					  </div>
+					</form>
+				</p>				
+			</div>
+		</div>
+		
+		</br><br/>
+		
+		<div class="neighborhood-guides">
+			
+			</br><br/>
+			
+			<div class="learn-more">
+				<div class="container">
+					<div class="col-md-7">
+						<h2>História</h2>
+						<p>O WebPortf nasceu no Instituto Federal de São Paulo (IFSP) Campus Bragança Paulista, em uma quinta-feira emocionante, com um lampejo de falta de critividade. Este blog inusitado foi feito a fim de compor os vários projetos da matéria de Desenvolvimento Web, conhecido pelo apelido extremamente carinhoso de DWS. </p>
+						<p>O desenvolvedor é um apreciador de obras relacionadas a design e, neste ramo normalmente, os profissionais freelancer apresentam seu trabalho em forma de portfólio. Seguindo este raciocínio WebPortf foi criado como uma ferramenta de auxilio para compartilhar exemplos de diferentes estilos de sites e para incentivar o desenvolvimento web através de tutoriais.</p>
+					</div>
+					<div class="col-md-3">
+						<h2>Navegar</h2>
+						<p>Você pode navegar pelos menus do site aproveitando suas diversas opções, como se cadastra, criar seu próprio portifólio, visualizar sites para se inspirar em suas criações e aprender com os tutoriais. Se estiver perdido verifique o Mapa do Site.</p>
+						<p>Comece a explorar!</p>
+					</div>
+					<div class="col-md-2">
+						<h2>Objetivo </h2> Inspirar profissionais e simpatizantes da área do mundo todo.
+						<div class="thumbnail" style="background-color: transparent; border: none;">
+							<canvas id="star" width=150 height=125></canvas>
+							<script>
+							var canvas, ctx, length = 30;
+							canvas = document.getElementById("star");
+							ctx = canvas.getContext("2d");
+							ctx.translate(60, 65);
+							ctx.rotate((Math.PI * 1 / 10));
+							for (var i = 5; i--;) {
+								ctx.lineTo(0, length);
+								ctx.translate(0, length);
+								ctx.rotate((Math.PI * 2 / 10));
+								ctx.lineTo(0, -length);
+								ctx.translate(0, -length);
+								ctx.rotate(-(Math.PI * 6 / 10));
+							}
+							ctx.lineTo(0, length);
+							ctx.closePath();
+							ctx.stroke();
+						</script>
+						</div>
+					</div>
+				</div>
+			</div>			
+			
+			<br/>
+			<h3 class="text-center">Mapa do Site:</h3>
+			<br/>
+			
+			<div class="rows">
+				<div class="learn-more">
+					<br/><br/>
+					<div class="container">
+						<div class="col-md-6">
+							<ul class="list-group">
+							  <li class="list-group-item"><a href="../index.html">Home</a></li>
+							  <li class="list-group-item"><a href="#">Sobre</a>
+								<ul class="list-group">
+									<li class="list-group-item"><a href="about-site.html">Site</a></li>
+									<li class="list-group-item"><a href="about-me.html">Desenvolvedor</a></li>
+								</ul>
+							  </li>
+							  <li class="list-group-item"><a href="tuto.html">Tutoriais</a>
+								<ul class="list-group">
+									<li class="list-group-item"><a href="tutorial/tuto-html_1.html">HTML: Introdução</a></li>
+									<li class="list-group-item"><a href="tutorial/tuto-html_2.html">HTML: Exemplos</a></li>
+								 </ul>
+							  </li>
+							  <li class="list-group-item"><a href="portf.html">Portfólio</a>
+								<ul class="list-group">
+									<li class="list-group-item"><a href="#">Visualização da imagem clicada</a></li>
+								</ul>
+							  </li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<ul class="list-group">
+							 <h4>Desconectado</h4>
+							  <li class="list-group-item"><a href="subscribe.html">Sing in</a></li>
+							   <li class="list-group-item"><a href="login.html">Login</a></li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<ul class="list-group">
+							 <h4>Conectado</h4>
+							   <li class="list-group-item"><a href="#">Nome do Usuário</a>
+								<ul class="list-group">
+									<li class="list-group-item"><a href="#">Meu portfólio</a></li>
+									<li class="list-group-item"><a href="#">Logout</a></li>
+								</ul>
+							   </li>
+							</ul>
+						</div>
+					</div>
+					<br/>
+				</div>
+			</div>
+			<br/><br/>
+		</div>
+		
+		<!-- rodapé -->
+		<footer class="footer">
+			<div class="container">
+				<p class="text-muted">Copyright © 2015 Todos os direitos</p>
+			</div>	
+		</footer>	
+		
+</html>

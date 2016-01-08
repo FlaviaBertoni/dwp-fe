@@ -1,0 +1,42 @@
+/*Jumbtron*/
+.jumbotron{
+	background-image: url(../images/NYPO.jpg);
+}
+.jumbotron p{
+	text-align:justify;
+}
+
+/*Gallery*/
+.gallery .row img{
+	height: 340px;
+	width: 230px;
+	display: inline-block;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+	margin: 1.5% 1% 1.5% 1%;
+}
+.gallery  .row img:hover{
+	opacity: 0.5;
+}
+.gallery .row{
+	background-color: #efefef;
+	border-top: 1px solid #dbdbdb;
+	border-bottom: 1px solid #dbdbdb;
+}
+.gallery{
+	margin-top: 10px;
+}
+
+@media screen and (max-width: 999px){
+	.group {
+		display: block;
+	}
+}
+@media screen and (min-width: 1000px) {
+	.group {
+		display: inline;
+	}
+}

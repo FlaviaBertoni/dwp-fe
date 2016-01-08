@@ -1,0 +1,126 @@
+﻿<html>
+	<head>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
+		<meta name="author" content="Flávia Bertoni"/>
+		<meta name="keywords" content="entrar, login, portfolio, web design"/>
+		<meta name="rating" content="general"/> <!-- Para qualquer idade -->
+		<meta http-equiv="content-language" content="pt-br"/>
+		
+		<!-- Bootstrap (CSS)-->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<!--<link rel="stylesheet" href="css/bootstrap-3.3.4-dist/css/bootstrap.min.css">-->
+		<!-- Fonte (letra)-->
+		<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+		<!-- Jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<!--<script src="js/jquery-1.11.2.min.js"></script>-->
+		<!-- Bootstrap (JS)-->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<!--<script src="css/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>-->
+		<!-- Originais -->
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/form.css">
+		<link rel="stylesheet" href="../css/small-page.css">
+		<script src="../js/validation-form.js"></script>
+		<script src="../js/user.js"></script>
+		<script src="../js/geolocation.js"></script>
+		
+        <title>WebPortf: Entrar</title>
+    </head>
+	
+    <body>
+		
+		<!-- menu -->
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			  </button>
+			  <a class="navbar-brand" href="#">WebPortf</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav">
+				<li><a href="../index.html">Home</a></li>
+				<li class="dropdown">
+				  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sobre<span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+					<li><a href="about-site.html">Site</a></li>
+					<li><a href="about-me.html">Desenvolvedor</a></li>
+				  </ul>
+				</li>
+			  </ul>
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="tuto.html">Tutoriais</a></li>
+				<li><a href="portf.html">Portfólio</a></li>
+				<li id="sing-in"><a href="subscribe.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+				<li class="active" id="log-in"><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+		
+		<div class="row">
+			<div class="col-md-5">.
+				<div class="form" >
+					<!-- Quando o formulário é enviado o método validationLogin (localizado no validation-form.js) valida as informações-->
+					<form class="form-horizontal" onsubmit="return validationLogin(this);">
+						<fieldset>
+							<legend>Entrar com uma conta existente</legend>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">Usuário:</label>
+								<div class="col-sm-10">
+								  <input type="text" name="user" class="form-control" placeholder="nome do usuário">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">Senha:</label>
+								<div class="col-sm-10">
+								  <input type="password" name="password" class="form-control" placeholder="senha">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-offset-2 col-sm-10">
+								  <button type="submit" class="btn btn-default">Entrar</button>
+								</div>
+							</div>
+						</fieldset>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<!-- Quando o usuário clica no link o método forgotPass (localizado no validation-form.js) é chamado, este pergunta o email e 
+								o nick do usuário, caso as informações estejam corretas é exibida a senha-->
+								<a id="link" onclick="forgotPass(this);" style="font-size:14px; cursor: pointer;">Esqueceu sua senha? Clique aqui.</a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div style="margin-left: 20px; margin-right: 20px;" id="geolocation">
+				</div>
+			</div>
+			<div class="col-md-5">
+				<h3>Ainda não possui um cadastro?</h3>
+				<p>Clique <a id="link" href="subscribe.html">aqui</a> para se cadastrar no WebPortf e ser um Web Designer!</p>
+					<!-- Vídeo -->
+					<div class="embed-responsive embed-responsive-16by9">
+						<video width="505" controls>
+							<source src="../videos/web_design.mp4" type="video/mp4">
+								Seu browser não suporta vídeo HTML5.
+						</video>
+					</div>
+					<br/>
+					<h4>Por que Web Design? Confira o vídeo acima.</h4>
+				<br/>
+			</div>
+		</div>
+		
+		<!-- rodapé -->
+		<footer class="footer">
+			<div class="container">
+				<p class="text-muted">Copyright © 2015 Todos os direitos</p>
+			</div>	
+		</footer>	
+		
+	</body>
+</html>

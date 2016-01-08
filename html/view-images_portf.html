@@ -1,0 +1,102 @@
+﻿<html>
+  <head>
+	<!-- Bootstrap (CSS)-->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<!--<link rel="stylesheet" href="../css/bootstrap-3.3.4-dist/css/bootstrap.min.css">
+	<!-- Fontes (letra)-->
+	<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<!-- Jquery -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+	<script src="../js/jquery-1.11.2.min.js"></script>
+	<!-- Bootstrap (JS)-->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<!--<script src="../css/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+	<!--Originais -->
+	<script src="../js/post.js"></script>
+	<script src="../js/view-images.js"></script>
+	<script src="../js/user.js"></script>
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/view-images.css">
+	
+	<title>Imagens</title>
+	
+  </head>
+  <body>
+
+	<!-- menu -->
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>                        
+		  </button>
+		  <a class="navbar-brand" href="#">WebPortf</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+		  <ul class="nav navbar-nav">
+			<li><a href="../index.html">Home</a></li>
+			<li class="dropdown">
+			  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sobre<span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="about-site.html">Site</a></li>
+				<li><a href="about-me.html">Desenvolvedor</a></li>
+			  </ul>
+			</li>
+		  </ul>
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="tuto.html">Tutoriais</a></li>
+			<li class="active"><a href="portf.html">Portfólio</a></li>
+			<li id="sing-in"><a href="subscribe.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+			<li id="log-in"><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+	
+	<!-- visualização da imagem em sua resolução original -->
+	<div class="container view-image">
+		<div class="thumbnail">
+			<!-- link para fechar a visualização das imagens e voltar para Portfólio -->
+			<a id="close" href="#"><img class="icon-close" src="../images/close.png"/></a>
+			<img class="active-image" src=""/>
+			<!-- link para imagem anterior -->
+			<a id="prev" href="#"><img class="icon-prev" src="../images/prev.png"/></a>
+			<!-- link para próxima imagem -->
+			<a id="next" href="#"><img class="icon-next" src="../images/next.png"/></a>
+		</div>
+		<p>
+			<h3 id="title">
+			</h3>
+		</p><br/><br/>
+	</div>
+	
+	<!-- comentários -->
+	<div class="container">
+      <form>
+        <div class="form-group">
+          <textarea class="form-control status-box" rows="2" cols="50" maxlength="200" placeholder="Comente aqui!"></textarea>
+        </div>
+      </form>
+      <div class="button-group pull-right">
+        <p class="counter">200</p>
+        <a href="#" class="btn">Post</a>
+      </div>
+    
+      <ul class="posts">
+      </ul>
+	  
+    </div>
+	
+	<br/> <br/>
+	<!-- rodapé-->
+	<footer class="footer">
+		<div class="container">
+			<p class="text-muted">Copyright © 2015 Todos os direitos</p>
+		</div>	
+	</footer>
+	
+  </body>
+</html>

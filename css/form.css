@@ -1,0 +1,40 @@
+body{
+	background-color: #efefef;
+}
+fieldset  legend{
+	color: #00b0ff;
+}
+.form .container{
+	background-color: #fff;
+}
+.form{
+	margin: 2% 2% 2% 2%;
+}
+.row{
+	margin: 2% 2% 2% 2%;
+}
+.row .col-md-5{
+	background-color: #f9f9f9;
+	border: 1px solid #dbdbdb;
+	margin-right: 1%;
+	margin-left: 5%;
+	margin-bottom: 3%;
+}
+.row .col-md-5 .form{
+	margin-left: 2%;
+	margin-right: 5%;
+}
+
+@media screen and (min-width: 992px) {
+	.row .col-md-5 {
+		margin-top: 160px;
+	}
+}
+@media screen and (max-width: 991px) {
+	.footer{
+		position:relative;
+	}
+}
+#border{
+	border: 1px solid #dbdbdb;
+}

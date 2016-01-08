@@ -1,0 +1,176 @@
+/*Classes jumbotron e derivadas(children)*/
+.jumbotron {
+  background-image:url(../images/bckg.png);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top:-20px;
+  margin-bottom: 0px;
+}
+.jumbotron .container {
+  position: relative;
+  top:50px;
+}
+.jumbotron .container h1 {
+  color: #fff;
+  font-size: 48px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  text-shadow:  0 1px 8px rgba(0, 0, 0, 0.6);
+}
+.jumbotron p {
+  font-size: 20px;
+  color: #fff;
+  text-shadow:  0 -1px 1px rgba(0, 0, 0, 0.6);
+  margin-left: 50px;
+}
+
+/*Estilo da Busca*/
+.search .form-group .input-search{
+	height: 28px;
+	width: 160px;
+	border-radius: 4px;
+	margin-right: 2px;
+	margin-left: 65px;
+}
+.search .form-group .btn{
+	background-color: #fff;
+	border-color: #B1B1B1;
+	color: #303030;
+}
+.search .form-group .btn:hover{
+	background-color: #dbdbdb;
+	color: #303030;
+}
+
+@media screen and (max-width: 410px){
+	.jumbotron .container {
+		margin-top: -60px;
+	}
+}
+
+/*Classes neighborhood-guides e derivadas(children)*/
+.neighborhood-guides{
+    background-color: #efefef;
+	border-top: 1px solid #dbdbdb;
+	margin-top:-20px;
+	text-align:justify;
+}
+.neighborhood-guides h2{
+    color: #393c3d;
+    font-size: 24px;
+}
+.neighborhood-guides p{
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+.neighborhood-guides a:hover #visible{
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+    text-shadow:  0 1px 8px rgba(0, 0, 0, 0.6);
+}
+.neighborhood-guides a:hover img{
+	opacity: 0.3;
+}
+/*ID usado para esconder as palavras "Corporate", "Game" e "Blog",
+que só serão mostradas quando ocorrer o evento hover*/
+#visible{
+	color: transparent;
+	text-decoration: none;
+	font-size: 30px;
+	text-align: center;
+	position: absolute; 
+	top: 45%; 
+	left: 0; 
+	width: 100%;
+	font-family: 'Shift', sans-serif;
+	font-weight: bold;	
+}
+
+/*Classes learn-more e derivadas(children)*/
+.learn-more {
+  background-color: #f7f7f7;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  text-align:justify;
+}
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.learn-more a {
+  color: #00b0ff;
+}
+#link{
+	color: #00b0ff;
+}
+#link:hover{
+	text-decoration: none;
+	color: #FF2F2F;
+}
+
+/*Classes footer e derivadas(children)*/
+.footer{
+	border-top: 1px solid #dbdbdb;
+	background-color: #fff;
+}
+.footer .container{
+	margin-top: 10px;
+	text-align: center;
+}
+
+/*Botões*/
+.btn{
+	background-color: #00b0ff;
+	border-color: #009EE6;
+	color: #fff;
+}
+.btn:hover{
+	background-color: #FF2F2F;
+	border-color: #E62A2A;
+	color: #fff;
+}
+.btn:visited{
+	color: #fff;
+}
+
+/*Cabeçarios*/
+h1{
+	font-family: 'Shift', sans-serif;
+	font-weight: bold;	
+}
+h2{
+	font-family: 'Shift', sans-serif;
+	font-weight: bold;	
+}
+h3{
+	font-family: 'Shift', sans-serif;
+	font-weight: bold;	
+}
+h4{
+	font-family: 'Shift', sans-serif;
+	font-weight: bold;	
+}
+
+/*Componentes exclusivos da pagina Meu Portifólio*/
+.my-portf {
+	margin-top: 30px;
+}
+.block-image{
+	display: inline-block;
+	margin: 1.5% 1% 1.5% 1%;
+	margin-top: 10px;
+}
+.neighborhood-guides .my-portf .row .group img:hover{
+	opacity:1;
+}
+.neighborhood-guides .my-portf .row .group img{
+	height: 340px;
+	width: 230px;
+	background-color: #fff;
+	border: 2px solid #dbdbdb;
+	border-radius: 5px;
+	display: inline-block;
+}

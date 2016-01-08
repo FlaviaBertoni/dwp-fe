@@ -1,0 +1,14 @@
+/*Para que o footer fique no final da página mesmo nas que tem pouco conteúdo*/
+html, body {
+	height:100%;
+}
+
+footer{
+	position:absolute;
+	bottom:0;
+	width:100%;
+}
+
+.neighborhood-guides{	
+	height: 48%;
+}

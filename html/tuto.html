@@ -1,0 +1,190 @@
+﻿<html>
+    <head>	
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
+		<meta name="author" content="Flávia Bertoni"/>
+		<meta name="keywords" content="tutorial, html, css, js, web design"/>
+		<meta name="rating" content="general"/> <!-- Para qualquer idade -->
+		<meta http-equiv="content-language" content="pt-br"/>
+		
+		<!-- Bootstrap (CSS)-->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<!--<link rel="stylesheet" href="css/bootstrap-3.3.4-dist/css/bootstrap.min.css">-->
+		<!-- Fonte (letra)-->
+		<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+		<!-- Jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<!--<script src="js/jquery-1.11.2.min.js"></script>-->
+		<!-- Bootstrap (JS)-->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<!--<script src="css/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>-->
+		<!-- Originais -->
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/tuto.css">
+		<script src="../js/user.js"></script>
+		
+        <title>WebPortf: Construa seu site</title>
+    </head>
+    
+    <body>
+	
+		<!-- menu -->
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			  </button>
+			  <a class="navbar-brand" href="#">WebPortf</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav">
+				<li><a href="../index.html">Home</a></li>
+				<li class="dropdown">
+				  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sobre<span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+					<li><a href="about-site.html">Site</a></li>
+					<li><a href="about-me.html">Desenvolvedor</a></li>
+				  </ul>
+				</li>
+			  </ul>
+			  <ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="tuto.html">Tutoriais</a></li>
+				<li><a href="portf.html">Portfólio</a></li>
+				<li id="sing-in"><a href="subscribe.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+				<li id="log-in"><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+		
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Tutoriais de Web Design.</h1>
+				<p>Aprenda sobre HTML, CSS e JS para criar seus próprios sites.</p>
+				<p>
+					<!-- pesquisa do google -->
+					<form class="form-horizontal	search" method=GET action="http://www.google.com/search">
+					  <div class="form-group">
+						<input class="input-search" type="text" name=q  value="" class="form-control" placeholder=" Buscar no Google"/> 
+						<button type="submit" name=btnG class="btn btn-default" value=""> <span class="glyphicon glyphicon-search"></span> </button>
+					  </div>
+					</form>
+				</p>            
+			</div>
+        </div>
+		
+		<!-- Links para os tutoriais, apenas os dois primeiros tem páginas associadas.-->
+		<br/><br/>
+		<div class="neighborhood-guides">
+			<div class="contn">
+				<br/><br/>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="thumbnail">
+							<div class="caption">
+								<a id="link" href="tutorial/tuto-html_1.html">
+									<h3>HTML: Introdução</h3>
+								</a>
+								<a href="tutorial/tuto-html_1.html">
+									<img src="../images/HTML5.png">
+								</a>
+								<p>HTML é uma linguagem de marcação utilizada para descrever páginas web. As siglas de HTML significam 
+								<b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage. Um documento HTML é escrito através de tags 
+								que descrevem diferentes propriedades para o documento, como ...</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="thumbnail">
+							<div class="caption">
+								<a id="link" href="tutorial/tuto-html_2.html">
+									<h3>HTML: Exemplos</h3>
+								</a>
+								<a href="tutorial/tuto-html_2.html">
+									<img src="../images/HTML5.png">
+								</a>
+								<p>Todo documento HTML deve começar com a determinação do seu tipo  < !DOCTYPE html>. 
+								Após começa o HTML de fato com a tag < html> e termina com a tag < / html>. 
+								A parte visivel do documento HTML na página está entre < body> e...</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="thumbnail">
+							<div class="caption">
+								<a id="link" href="#">
+									<h3>HTML: Elementos</h3>
+								</a>
+								<a href="#">
+									<img src="../images/HTML5.png">
+								</a>
+								<p>Os elementos em HTML são declarados com uma tag de início e com uma tag que indica o fim, 
+								sendo que o conteúdo ao qual se aplicará o elemento fica no meio, ou seja, entre as tags de abertura e fechamento.
+								Exemplos: < tagname>conteúdo< /...</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="thumbnail">
+							<div class="caption">
+								<a id="link" href="#">
+									<h3>CSS: Introdução</h3>
+								</a>
+								<a href="#">
+									<img src="../images/css.png">
+								</a>
+								<p>CSS significa Cascading Style Sheets (Folhas de Estilo em Cascata)
+								Os estilos definem como exibir elementos HTML
+								Os estilos são normalmente armazenados em Folhas de Estilo
+								Os estilos foram adicionados à HTML 4.0 para resolver...</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="thumbnail">
+							<div class="caption">
+								<a id="link" href="#">
+									<h3>CSS: Sintaxe</h3>
+								</a>
+								<a href="#">
+									<img src="../images/css.png">
+								</a>
+								<p>A sintaxe CSS é constituida de três partes: um seletor (selector), um propriedade (property) e um valor (value):
+								selector {property: value} O seletor é normalmente o elemento/tag HTML que você deseja definir, a propriedade é o 
+								atributo que você deseja...</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="thumbnail">
+							<div class="caption">
+								<a id="link" href="#">
+									<h3>JS: Introdução</h3>
+								</a>
+								<a href="#">
+									<img src="../images/js.png">
+								</a>
+								<p>Os principais browsers do mercado, Firefox, Mozilla, Opera, Netscape, Safari, Internet Explorer 
+								e outros mais, suportam a linguagem JavaScript. Ela é utilizada para a validação de formulários, ler e 
+								inserir conteúdo em uma página, criar cookies...</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		
+		<!-- rodapé -->
+		<footer class="footer">
+			<div class="container">
+				<p class="text-muted">Copyright © 2015 Todos os direitos</p>
+			</div>	
+		</footer>		
+		
+	</body>
+</html>

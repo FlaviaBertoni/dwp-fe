@@ -1,0 +1,32 @@
+.neighborhood-guides{
+	text-align:justify;
+}
+.jumbotron{
+	background-image: url(../images/BlueMaterial.jpg);
+}
+.row .caption img{
+	height: 100px;
+	width: 100px;
+	border: 1px solid white;
+	border-radius: 15px;
+	box-shadow: 0 .125em .5em rgba(0, 0, 0, 0.2);
+	background-image: linear-gradient(180deg, white, #E0E0E0 );
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 3px;
+	display:inline-block;
+}
+.row img:hover{
+	background-image: none;
+	background-color: white;
+	opacity: 0.5;
+}
+.caption{
+	margin: 0px 10px 0px 10px;
+}
+.contn{
+	margin: 0% 5% 0% 5%;
+}
+.tutoriais .neighborhood-guides{
+	border: none;
+}

@@ -1,0 +1,227 @@
+﻿<html>
+	<head>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
+		<meta name="author" content="Flávia Bertoni"/>
+		<meta name="keywords" content="sing-in, increver, cadastro, subscribe, portfolio, web design"/>
+		<meta name="rating" content="general"/> <!-- Para qualquer idade -->
+		<meta http-equiv="content-language" content="pt-br"/>
+		
+		<!-- Bootstrap (CSS)-->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<!--<link rel="stylesheet" href="css/bootstrap-3.3.4-dist/css/bootstrap.min.css">-->
+		<!-- Fonte (letra)-->
+		<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+		<!-- Jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<!--<script src="js/jquery-1.11.2.min.js"></script>-->
+		<!-- Bootstrap (JS)-->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<!--<script src="css/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>-->
+		<!-- Originais -->
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/form.css">
+		<script src="../js/validation-form.js"></script>
+		<script src="../js/user.js"></script>
+		
+		<title>WebPortf: Cadastro</title>
+    </head>
+
+	<body>
+        
+		<!-- Menu -->
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			  </button>
+			  <a class="navbar-brand" href="#">WebPortf</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav">
+				<li><a href="../index.html">Home</a></li>
+				<li class="dropdown">
+				  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sobre<span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+					<li><a href="about-site.html">Site</a></li>
+					<li><a href="about-me.html">Desenvolvedor</a></li>
+				  </ul>
+				</li>
+			  </ul>
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="tuto.html">Tutoriais</a></li>
+				<li><a href="portf.html">Portfólio</a></li>
+				<li class="active" id="sing-in"><a href="subscribe.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+				<li id="log-in"><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+		
+        <div class="jumbotron">
+            <div class="container">
+				<h1>Cadastra-se</h1>
+				<p>e faça parte do <span class="bold">WebPortf</span>.</p>
+			</div>
+		</div>
+		
+		<div class="form">
+		<div id="border" class="container">
+			<br/>
+			<!-- Quando o formulário é enviado o método validationSingup (localizado no validation-form.js) valida as informações. -->
+			<form class="form-horizontal" onsubmit="return validationSingup(this);">
+				<fieldset>
+				<legend>Sobre a Conta</legend>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Nome de Usuário*:</label>
+					<div class="col-sm-10">
+					  <input type="text" name="nick" class="form-control" placeholder="usuário">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">E-mail*:</label>
+					<div class="col-sm-10">
+					  <input type="email" name="email" class="form-control" placeholder="e-mail">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Senha*:</label>
+					<div class="col-sm-10">
+					  <input type="password" name="password" class="form-control" placeholder="senha">
+					  <p class="help-block">(Mínimo: 6 caracteres)</p>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Confirmar a Senha*:</label>
+					<div class="col-sm-10">
+					  <input type="password" name="confPass" class="form-control" placeholder="senha">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Pergunta de Segurança:</label>
+					<div class="col-sm-10">
+						<select class="form-control">
+							<option value="pet">Qual o nome do seu primeiro animal de estimação?</option>
+							<option value="school">Qual o nome da sua escola preferida?</option>
+							<option value="show">Qual é a sua comida favorita?</option>
+						</select>
+						<input type="text" name="a-security" class="form-control" placeholder="resposta">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Imagem do Perfil:</label>
+					<div class="col-sm-10">
+						<input type="file" name="img" id="image" accept="image/gif, image/jpeg, image/png"/>
+						<p class="help-block">Escolha um arquivo (.jpeg, .png, .gif) para ser sua imagem de perfil.</p>
+					</div>
+				</div>				
+				</fieldset>
+				<fieldset>
+				<legend>Informações Pessoais</legend>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Nome Completo:</label>
+					<div class="col-sm-10">
+					  <input type="text" name="name" maxlength="80" class="form-control" placeholder="nome">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Sexo:</label>
+					<div class="col-sm-10">
+						<div class="radio">
+							<label>
+							<input type="radio" name="sex" value="F">Feminino
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+							<input type="radio" name="sex" value="M">Masculino
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Idade:</label>
+					<div class="col-sm-10">
+					  <input input type="number" name="age" min="10" class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Data de Nascimento:</label>
+					<div class="col-sm-10">
+					  <input type="date" name="nasc" class="form-control" min="1930-01-01" max="2005-01-01" />
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Endereço:</label>
+					<div class="col-sm-10">
+					  <input type="text" name="address" class="form-control" placeholder="rua, número, bairro, cidade - estado">
+					</div>
+				</div>		
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Telefone:</label>
+					<div class="col-sm-10">
+					  <input type="text" name="phone" onblur="validationPhone(this.form);" novalidate class="form-control" placeholder="0123456789">
+					  <p class="help-block">(DDD+telefone) Somente números.</p>
+					</div>
+				</div>					
+				</fieldset>
+				<fieldset>
+				<legend>Interesses </legend>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Selecione sua cor preferida:</label>
+					<div class="col-sm-10">
+					  <input type="color" name="favcolor" class="form-control"/>
+					</div>
+				</div>	
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Linguagens:</label>
+					<div class="col-sm-10">
+					  <div class="checkbox">
+						<label>
+						  <input type="checkbox" value="">
+						  CSS
+						</label>
+					  </div>
+					  <div class="checkbox">
+						<label>
+						  <input type="checkbox" value="">
+						  HTML
+						</label>
+					  </div>
+					  <div class="checkbox">
+						<label>
+						  <input type="checkbox" value="">
+						  CANVAS
+						</label>
+					  </div>
+					  <div class="checkbox">
+						<label>
+						  <input type="checkbox" value="">
+						  JAVASCRIPT
+						</label>
+					  </div>
+					</div>
+				</div>
+				</fieldset>				
+				<fieldset><legend></legend>				
+				<div class="form-group">
+					<div class="col-sm-12 text-right">
+					  <button type="submit" class="btn btn-default">Cadastrar</button>
+					</div>
+				</div>
+				</fieldset>	
+			</form>
+		</div>
+		</div>
+		
+		<!-- rodapé -->
+		<footer class="footer">
+			<div class="container">
+				<p class="text-muted">Copyright © 2015 Todos os direitos</p>
+			</div>	
+		</footer>		
+		
+	</body>
+</html>
